@@ -1,25 +1,28 @@
 <?php
-function dubble($int){
-  $result = 2;
-  $result *= $int;
-  return $result;
+
+function sum($int){
+    $result = $int *= 2;
+    return $result;
 }
-echo dubble(3);
+
+echo sum(8);
+
 function f($a, $b){
-    $result = $a + $b;
-   return $result;
+    return $a + $b;
 }
-echo f(6, 18);
+
+echo f(3,5);
+
 function multiply($arr){
-  $result = 1;
-  foreach($arr as $a){
+    $result = 1;
+    foreach($arr as $a) {
     $result *= $a;
-  }
-  echo $result;
-}
-multiply(array(1
-, 3, 5 ,7, 9));
-echo "\n";
+    }
+    echo $result;
+}    
+
+multiply(array(1,3,5,7,9));
+
 function max_array($arr){
     $max_number = $arr[0];
  foreach($arr as $a){
@@ -27,6 +30,12 @@ function max_array($arr){
          $max_number = $a;
      }
  }
-     return $max_number;
+     echo $max_number;
  }
- ?>
+ 
+ max_array(array(3,5,7,13,1));
+ 
+ 
+
+
+
